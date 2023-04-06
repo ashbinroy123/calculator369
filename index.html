@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./calc.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <div class="container">
+        <form action="">
+            <p>CASIO</p>
+            <input type="text" id="screen">
+            <br>
+            <input type="button" class="btnno" value="7" onclick="screen.value+='7'">
+            <input type="button" class="btnno" value="8" onclick="screen.value+='8'">
+            <input type="button" class="btnno" value="9" onclick="screen.value+='9'">
+            <input type="button" class="btnop" value="/" onclick="screen.value+='/'">
+            <br>
+            <input type="button" class="btnno" value="4" onclick="screen.value+='4'">
+            <input type="button" class="btnno" value="5" onclick="screen.value+='5'">
+            <input type="button" class="btnno" value="6" onclick="screen.value+='6'">
+            <input type="button" class="btnop" value="*" onclick="screen.value+='*'">
+            <br>
+            <input type="button" class="btnno" value="1" onclick="screen.value+='1'">
+            <input type="button" class="btnno" value="2" onclick="screen.value+='2'">
+            <input type="button" class="btnno" value="3" onclick="screen.value+='3'">
+            <input type="button" class="btnop" value="+" onclick="screen.value+='+'">
+            <br>
+            <input type="button" class="btncl" value="C" onclick="screen.value=''">
+            <input type="button" class="btnac" value="X" onclick="screen.value=screen.value.toString().slice(0,-1)">
+            <input type="button" class="btnno" value="0" onclick="screen.value+='0'">
+            <input type="button" class="btnop" value="=" onclick="screen.value=eval(screen.value)">
+            <input type="button" class="btnop" value="-" onclick="screen.value+='-'">
+        </form>
+
+    </div>
+</body>
+</html>
